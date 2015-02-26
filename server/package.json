@@ -1,7 +1,7 @@
 {
-  "name": "two-way-data-binding",
+  "name": "angular quiz server",
   "version": "1.0.0",
-  "description": "This is a example of two way data binding in angular",
+  "description": "angular server - angular_node_mysql",
   "dependencies": {
     "express": "~4.9.2",
     "mysql": "~2.5.0"
