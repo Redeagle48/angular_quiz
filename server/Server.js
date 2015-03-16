@@ -1,3 +1,6 @@
+/* http://codeforgeek.com/2014/09/two-way-data-binding-angularjs/ */
+
+
 var express = require("express");
 var mysql = require("mysql");
 var app = express();
@@ -58,6 +61,23 @@ app.get('/load', function (req, res) {
 app.get('/test', function (req, res) {
     console.log("REST API call: method \'test\'");
     res.end("Test with success");
+});
+
+/* Get Question */
+app.get('/Question_Get', function (req, res) {
+    
+    var response = [
+        {
+            "question" : "What is the color of the sky?",
+            "answer" : "Blue"
+        },
+        {
+            "question" : "What is the color of the sand?",
+            "answer" : "Brown"
+        },
+    ];
+    
+    res.end(JSON.stringify(response));
 });
 
 /*
